@@ -14,7 +14,7 @@ function App() {
   }, [])
 
   const addInnovation = (innovations) => {
-    fetch('http://localhost:3000/innovations', {
+    fetch('http://localhost:4200/innovations', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
