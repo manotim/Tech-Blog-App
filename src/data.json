@@ -1,5 +1,5 @@
 {
-  "tech_innovations": [
+  "innovations": [
     {
       "innovation_image": "https://gshiftlabs.com/wp-content/uploads/2022/07/The-Difference-Between-Internet-And-World-Wide-Web-%E2%80%94-And-Why-It-Matters-1.jpg",
       "innovation_title": "World Wide Web",
@@ -191,7 +191,7 @@
       "id": 9
     },
     {
-      "innovation_image": "",
+      "innovation_image": "https://media.istockphoto.com/id/1324380506/photo/people-with-vr-grasses-playing-virtual-reality-game-future-digital-technology-and-3d-virtual.jpg?s=612x612&w=0&k=20&c=I_9fnEi1hNHFwy0qe8g7V1ZQJmgyKEDOSDJonScTSMU=",
       "innovation_title": "Virtual Reality Headset",
       "innovator_name": "Palmer Luckey",
       "innovation_story": [
