@@ -1,0 +1,108 @@
+{
+  "tech_innovations": [
+    {
+      "innovation_image": "https://gshiftlabs.com/wp-content/uploads/2022/07/The-Difference-Between-Internet-And-World-Wide-Web-%E2%80%94-And-Why-It-Matters-1.jpg",
+      "innovation_title": "World Wide Web",
+      "innovator_name": "Tim Berners-Lee",
+      "innovation_year": 1989,
+      "views": 3532,
+      "id": 1
+    },
+    {
+      "innovation_image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone-14-pro-max-colors.png",
+      "innovation_title": "iPhone",
+      "innovator_name": "Apple Inc.",
+      "innovation_year": 2007,
+      "views": 4972,
+      "id": 2
+    },
+    {
+      "innovation_image": "https://news.microsoft.com/wp-content/uploads/prod/sites/430/2021/06/1.jpg",
+      "innovation_title": "Microsoft Windows",
+      "innovator_name": "Microsoft Corporation",
+      "innovation_year": 1985,
+      "views": 5678,
+      "id": 3
+    },
+    {
+      "innovation_image": "https://techcrunch.com/wp-content/uploads/2015/10/google-search.png",
+      "innovation_title": "Google Search",
+      "innovator_name": "Larry Page and Sergey Brin",
+      "innovation_year": 1997,
+      "views": 1395,
+      "id": 4
+    },
+    {
+      "innovation_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png",
+      "innovation_title": "Amazon Web Services",
+      "innovator_name": "Amazon.com, Inc.",
+      "innovation_year": 2006,
+      "views": 4873,
+      "id": 5
+    },
+    {
+      "innovation_image": "https://media.geeksforgeeks.org/wp-content/uploads/s2-1.jpg",
+      "innovation_title": "Linux",
+      "innovator_name": "Linus Torvalds",
+      "innovation_year": 1991,
+      "views": 1956,
+      "id": 6
+    },
+    {
+      "innovation_image": "https://contentstatic.techgig.com/photo/93158297/Oracle-to-discontinue-extended-support-for-Java-7.jpg",
+      "innovation_title": "Java",
+      "innovator_name": "James Gosling",
+      "innovation_year": 1995,
+      "views": 5229,
+      "id": 7
+    },
+    {
+      "innovation_image": "https://tesla-cdn.thron.com/delivery/public/image/tesla/f6812228-7008-4f30-9cad-1e15731bb086/bvlatuR/std/2880x1620/roadster-interior-desktop?quality=auto-medium&format=auto",
+      "innovation_title": "Tesla Roadster",
+      "innovator_name": "Elon Musk",
+      "innovation_year": 2008,
+      "views": 9285,
+      "id": 8
+    },
+    {
+      "innovation_image": "https://images.techhive.com/images/article/2015/09/ibm-watson-100616825-large.jpg?auto=webp&quality=85,70",
+      "innovation_title": "IBM Watson",
+      "innovator_name": "IBM",
+      "innovation_year": 2010,
+      "views": 2367,
+      "id": 9
+    },
+    {
+      "innovation_image": "",
+      "innovation_title": "Virtual Reality Headset",
+      "innovator_name": "Palmer Luckey",
+      "innovation_year": 2012,
+      "views": 8899,
+      "id": 10
+    },
+    {
+      "innovation_image": "https://s.yimg.com/ny/api/res/1.2/uQj3EhlJ1bPL9DMgMw_ncw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02ODk-/https://s.yimg.com/os/creatr-uploaded-images/2021-07/e35896d1-eb10-11eb-b7ff-c8fd80773144",
+      "innovation_title": "Bitcoin",
+      "innovator_name": "Satoshi Nakamoto",
+      "innovation_year": 2009,
+      "views": 2684,
+      "id": 11
+    },
+    {
+      "innovation_image": "https://www.pewtrusts.org/-/media/post-launch-images/2020/10/gettyimages965714620jpgmaster/16x9_m.jpg",
+      "innovation_title": "3D Printing",
+      "innovator_name": "Chuck Hull",
+      "innovation_year": 1983,
+      "views": 8532,
+      "id": 12
+    },
+    {
+      "innovation_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWL5dc5yDxFWslTLXmr5gyXJdkaNrC2kvRQ&usqp=CAU",
+      "innovation_title": "Smartwatch",
+      "innovator_name": "Apple Inc.",
+      "innovation_year": 2015,
+      "views": 1556,
+      "id": 13
+    }
+  ]
+}
