@@ -7,7 +7,7 @@ function App() {
   const [innovations, setInnovations] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:4300/innovations')
+    fetch('http://localhost:4500/innovations')
       .then((res) => res.json())
       .then((data) => setInnovations(data))
   }, [])
