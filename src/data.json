@@ -49,6 +49,16 @@
       "innovation_image": "https://news.microsoft.com/wp-content/uploads/prod/sites/430/2021/06/1.jpg",
       "innovation_title": "Microsoft Windows",
       "innovator_name": "Microsoft Corporation",
+      "innovation_story": [
+        "Microsoft Windows, also called Windows and Windows OS, computer operating system (OS) developed by Microsoft Corporation to run personal computers (PCs).",
+        "Featuring the first graphical user interface (GUI) for IBM-compatible PCs, the Windows OS soon dominated the PC market. Approximately 90 percent of PCs run some version of Windows.",
+        "The first version of Windows, released in 1985, was simply a GUI offered as an extension of Microsoft’s existing disk operating system, or MS-DOS.",
+        "Based in part on licensed concepts that Apple Inc. had used for its Macintosh System Software, Windows for the first time allowed DOS users to visually navigate a virtual desktop,",
+        "opening graphical “windows” displaying the contents of electronic folders and files with the click of a mouse button, rather than typing commands and directory paths at a text prompt.",
+        "The first version of Windows, released in 1985, was simply a GUI offered as an extension of Microsoft’s existing disk operating system, or MS-DOS. Based in part on licensed concepts that Apple Inc.",
+        "had used for its Macintosh System Software, Windows for the first time allowed DOS users to visually navigate a virtual desktop, opening graphical “windows” displaying the contents of electronic folders and files with the click of a mouse button, rather than typing commands and directory paths at a text prompt."
+      ],
+      "source": "https://www.britannica.com/technology/Microsoft-Windows",
       "innovation_year": 1985,
       "views": 5678,
       "id": 3
@@ -78,6 +88,15 @@
       "innovation_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png",
       "innovation_title": "Amazon Web Services",
       "innovator_name": "Amazon.com, Inc.",
+      "innovation_story": [
+        "AWS (Amazon Web Services) is a comprehensive, evolving cloud computing platform provided by Amazon that includes a mixture of infrastructure-as-a-service (IaaS),",
+        "platform-as-a-service (PaaS) and packaged-software-as-a-service (SaaS) offerings. AWS services can offer an organization tools such as compute power, database storage and content delivery services.",
+        "Amazon.com Web Services launched its first web services in 2002 from the internal infrastructure that Amazon.com built to handle its online retail operations. In 2006, it began offering its defining IaaS services.",
+        "AWS was one of the first companies to introduce a pay-as-you-go cloud computing model that scales to provide users with compute, storage or throughput as needed.",
+
+        "AWS offers many different tools and solutions for enterprises and software developers that can be used in data centers in up to 190 countries. Groups such as government agencies, education institutions, non-profits and private organizations can use AWS services."
+      ],
+      "source": "https://www.techtarget.com/searchaws/definition/Amazon-Web-Services",
       "innovation_year": 2006,
       "views": 4873,
       "id": 5
@@ -114,6 +133,15 @@
       "innovation_image": "https://contentstatic.techgig.com/photo/93158297/Oracle-to-discontinue-extended-support-for-Java-7.jpg",
       "innovation_title": "Java",
       "innovator_name": "James Gosling",
+      "innovation_story": [
+        "Before development of the java language world relies on C++, which incorporated several oops concepts and looked perfect at that time.",
+        "But then it was realized that C++ can be made to program only a specific set of devices, as it is platform dependent. This led James towards the motivation of",
+        "creating a platform independent language which apart from computer could be used to program other devices as well. James with some of his colleagues started working",
+        "towards the development of this language in the year 1991. It took 18 months for James to develop the first working version of this language. It was initially named as 'OAK'",
+        "and later in the year of 1995 it was forever named as 'JAVA'. James has invented the authentic layout of java and also the compiler and virtual machine. Java as we all know is a language with the widest scope,",
+        "which has changed internet forever with its amazing features and simplicity. We owe the development of this boon none other thanJames Gosling."
+      ],
+      "source": "https://www.javatpoint.com/james-gosling-father-of-java",
       "innovation_year": 1995,
       "views": 5229,
       "id": 7
@@ -142,6 +170,22 @@
       "innovation_image": "https://images.techhive.com/images/article/2015/09/ibm-watson-100616825-large.jpg?auto=webp&quality=85,70",
       "innovation_title": "IBM Watson",
       "innovator_name": "IBM",
+      "innovation_story": [
+        "IBM Watson first garnered worldwide attention in 2011 as the computerized “brain” that won one million dollars on the TV game show Jeopardy! by beating human contestants.",
+        "Since then, IBM has widely deployed Watson in many industry verticals and areas of application, and it has become the gold standard for purposeful analytics processing.",
+        "IBM Watson is a data analytics processor that uses natural language processing, a technology that analyzes speech for meaning and syntax and translates this into actionable answers.",
+
+        "IBM Watson was named after IBM’s first CEO, Thomas J. Watson. The technology behind Watson was originally developed in an IBM research project known as DeepQA.",
+        "The goal of the project was to develop a natural language-responsive system that could interpret questions asked in a human language and then analyze vast amounts of",
+        "data and return answers that it would take human researchers days, weeks, or even months to derive.",
+
+        "The 2011 Jeopardy! contest against the game show’s champions Ken Jennings and Brad Rutter was IBM Watson’s first public test; in the end, Watson was victorious.",
+
+        "Two years later, IBM announced the first commercial application of Watson was designed for Sloan Kettering Cancer Center and WellPoint insurance. The application performed cost management analysis in the treatment of lung cancer.",
+
+        "Today, IBM Watson is used in a multitude of industry sectors with specialized information needs, including veterinary science, environmental and geotechnical engineering, education, government, food and beverage, legal, and music and entertainment."
+      ],
+      "source": "https://www.techrepublic.com/article/ibm-watson-the-smart-persons-guide/",
       "innovation_year": 2010,
       "views": 2367,
       "id": 9
