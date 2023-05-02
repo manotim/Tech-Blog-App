@@ -8,32 +8,29 @@ function App() {
   const [innovations, setInnovations] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:4500/innovations')
+    fetch('http://localhost:4200/innovations')
       .then((res) => res.json())
       .then((data) => setInnovations(data))
   }, [])
 
-  const addInnovation =(innovations)=>{
-    fetch('http://localhost:4300/innovations', {
-      method : 'POST',
-      headers:{
+  const addInnovation = (innovations) => {
+    fetch('http://localhost:3000/innovations', {
+      method: 'POST',
+      headers: {
         'Content-Type': 'application/json',
-        
       },
 
       body: JSON.stringify(innovations),
     })
-    .then((response)=> response.json())
-    .then((innovations) => {
-      setInnovations([...innovations,innovations]);
-
-    });
-  
-  };
+      .then((response) => response.json())
+      .then((innovations) => {
+        setInnovations([...innovations, innovations])
+      })
+  }
   return (
     <div className='App'>
       <Header />
-      <AddInnovation addInnovation={addInnovation}/>
+      <AddInnovation addInnovation={addInnovation} />
       <InnovationsList innovations={innovations} />
     </div>
   )
