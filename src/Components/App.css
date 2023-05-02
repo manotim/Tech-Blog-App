@@ -28,6 +28,33 @@
   color: #61dafb;
 }
 
+em {
+  color: red;
+}
+
+.heading {
+  color: blue;
+  font-size: 50px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+}
+
+header {
+  background: linear-gradient(
+    90deg,
+    rgba(237, 237, 244, 1) 0%,
+    rgba(40, 150, 184, 1) 42%,
+    rgba(246, 251, 252, 1) 86%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
