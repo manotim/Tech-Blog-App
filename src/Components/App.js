@@ -1,6 +1,7 @@
 import './App.css'
 import React, { useState, useEffect } from 'react'
 import InnovationsList from './InnovationsList'
+import UpdateInnovation from './UpdateInnovation'
 import AddInnovation from './AddInnovation'
 import Header from './Header'
 
@@ -26,6 +27,8 @@ function App() {
     fetchInnovations(setInnovations)
   }, [])
 
+
+
   const addInnovation = (innovations) => {
     fetch('http://localhost:4200/innovations', {
       method: 'POST',
@@ -35,6 +38,7 @@ function App() {
 
       body: JSON.stringify(innovations),
     })
+
       .then((response) => response.json())
       .then((innovations) => {
         setInnovations([...innovations, innovations])
@@ -67,11 +71,13 @@ function App() {
   return (
     <div className='App'>
       <Header getInnovation={getInnovation} />
-      <AddInnovation addInnovation={addInnovation} />
+      
       <InnovationsList
         innovations={innovations}
         removeInnovation={removeInnovation}
       />
+      <AddInnovation addInnovation={addInnovation} />
+      <UpdateInnovation updateInnovation={UpdateInnovation}/>
     </div>
   )
 }

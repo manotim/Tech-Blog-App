@@ -1,6 +1,7 @@
 import React from 'react'
 import InnovationItem from './InnovationItem'
 
+
 function InnovationsList({ innovations, removeInnovation }) {
   return (
     <main>
@@ -16,6 +17,7 @@ function InnovationsList({ innovations, removeInnovation }) {
         })}
       </section>
     </main>
+
   )
 }
 
