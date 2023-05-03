@@ -39,7 +39,7 @@
         "would pave the way for Apple's device ecosystem, enhancing the UX with seamless integration.",
         "The result would increase loyalty and prevent Apple fans from leaving the convenience and safety of its walled garden."
       ],
-      "Source": " https://cybernews.com/editorial/how-iphone-changed-world-in-15-years/#:~:text=Although%20the%20touchscreen,its%20walled%20garden.",
+      "source": "https://www.scientificamerican.com/article/understanding-the-real-innovation-behind-the-iphone/",
       "innovation_year": 2007,
       "id": 2
     },
@@ -76,7 +76,7 @@
         "along with Apple, IBM, and Microsoft. Despite this myriad of products, its original search tool remains the core of its success.",
         "In 2016 Alphabet earned nearly all of its revenue from Google advertising based on users’ search requests."
       ],
-      "Source": "https://www.britannica.com/topic/Google-Inc/Other-services ",
+      "source": "https://www.britannica.com/topic/Google-Inc/Other-services ",
       "innovation_year": 1997,
       "id": 4
     },
@@ -118,7 +118,7 @@
         "New distributions (packages of Linux software) have been created since the 1990s. Some of the more well-known distributions include MX Linux",
         "Manjaro, Linux Mint, and Ubuntu. "
       ],
-      "Source": " https://www.britannica.com/technology/system-software",
+      "source": " https://www.britannica.com/technology/system-software",
       "innovation_year": 1991,
       "id": 6
     },
@@ -153,7 +153,7 @@
         "with avoiding accidents. They then analyzed the data coming off these sensors. The product of this was the self-driving update pushed",
         "to the cars in October 2015."
       ],
-      "Source": "https://d3.harvard.edu/platform-digit/submission/tesla-a-data-driven-future/ ",
+      "source": "https://d3.harvard.edu/platform-digit/submission/tesla-a-data-driven-future/ ",
       "innovation_year": 2008,
       "id": 8
     },
@@ -191,37 +191,9 @@
         "Subsequent technological and software developments over the following years brought with them a progressive evolution",
         "both in devices and in interface design."
       ],
-      "Source": "https://www.iberdrola.com/innovation/virtual-reality ",
+      "source": "https://www.iberdrola.com/innovation/virtual-reality ",
       "innovation_year": 2012,
       "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "add": true,
-      "id": 15
-    },
-    {
-      "add": true,
-      "id": 16
-    },
-    {
-      "add": true,
-      "id": 17
-    },
-    {
-      "add": true,
-      "id": 18
     }
   ]
 }

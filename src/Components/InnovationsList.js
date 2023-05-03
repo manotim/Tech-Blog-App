@@ -1,13 +1,21 @@
 import React from 'react'
 import InnovationItem from './InnovationItem'
 
-function InnovationsList({ innovations }) {
+function InnovationsList({ innovations, removeInnovation }) {
   return (
-    <div>
-      {innovations.map((innovation) => {
-        return <InnovationItem {...innovation} key={innovation.id} />
-      })}
-    </div>
+    <main>
+      <section className='container'>
+        {innovations.map((innovation) => {
+          return (
+            <InnovationItem
+              {...innovation}
+              key={innovation.id}
+              removeInnovation={removeInnovation}
+            />
+          )
+        })}
+      </section>
+    </main>
   )
 }
 
