@@ -1,6 +1,7 @@
 import './App.css'
 import React, { useState, useEffect } from 'react'
 import InnovationsList from './InnovationsList'
+import UpdateInnovation from './UpdateInnovation'
 import AddInnovation from './AddInnovation'
 import Header from './Header'
 
@@ -12,6 +13,8 @@ function App() {
       .then((res) => res.json())
       .then((data) => setInnovations(data))
   }, [])
+
+
 
   const addInnovation = (innovations) => {
     fetch('http://localhost:4200/innovations', {
@@ -32,7 +35,7 @@ function App() {
   };
 
   const onDeleteInnovationItem = (id) => {
-    fetch(`http://localhost:4300/innovations/${id}`, {
+    fetch(`http://localhost:4200/innovations/${id}`, {
       method: 'DELETE',
     })
       .then(() => {
@@ -44,7 +47,8 @@ function App() {
   return (
     <div className='App'>
       <Header />      
-      <InnovationsList innovations={innovations} onDeleteInnovationItem={onDeleteInnovationItem} />      
+      <InnovationsList innovations={innovations} onDeleteInnovationItem={onDeleteInnovationItem} />     
+      <UpdateInnovation updateInnovation={UpdateInnovation}/>
       <AddInnovation addInnovation={addInnovation}/>
 
     </div>

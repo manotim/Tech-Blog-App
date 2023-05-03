@@ -157,9 +157,7 @@
       "innovation_year": 2008,
       "id": 8
     },
- 
     {
-
       "innovation_image": "https://media.istockphoto.com/id/1324380506/photo/people-with-vr-grasses-playing-virtual-reality-game-future-digital-technology-and-3d-virtual.jpg?s=612x612&w=0&k=20&c=I_9fnEi1hNHFwy0qe8g7V1ZQJmgyKEDOSDJonScTSMU=",
       "innovation_title": "Virtual Reality Headset",
       "innovator_name": "Palmer Luckey",
@@ -201,10 +199,6 @@
     {
       "add": true,
       "id": 17
-    },
-    {
-      "add": true,
-      "id": 18
     }
   ]
 }
