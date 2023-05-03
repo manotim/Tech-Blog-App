@@ -166,26 +166,6 @@
       "id": 8
     },
     {
-      "innovation_image": "https://images.techhive.com/images/article/2015/09/ibm-watson-100616825-large.jpg?auto=webp&quality=85,70",
-      "innovation_title": "IBM Watson",
-      "innovator_name": "IBM",
-      "innovation_story": [
-        "IBM Watson first garnered worldwide attention in 2011 as the computerized “brain” that won one million dollars on the TV game show Jeopardy! by beating human contestants.",
-        "Since then, IBM has widely deployed Watson in many industry verticals and areas of application, and it has become the gold standard for purposeful analytics processing.",
-        "IBM Watson is a data analytics processor that uses natural language processing, a technology that analyzes speech for meaning and syntax and translates this into actionable answers.",
-        "IBM Watson was named after IBM’s first CEO, Thomas J. Watson. The technology behind Watson was originally developed in an IBM research project known as DeepQA.",
-        "The goal of the project was to develop a natural language-responsive system that could interpret questions asked in a human language and then analyze vast amounts of",
-        "data and return answers that it would take human researchers days, weeks, or even months to derive.",
-        "The 2011 Jeopardy! contest against the game show’s champions Ken Jennings and Brad Rutter was IBM Watson’s first public test; in the end, Watson was victorious.",
-        "Two years later, IBM announced the first commercial application of Watson was designed for Sloan Kettering Cancer Center and WellPoint insurance. The application performed cost management analysis in the treatment of lung cancer.",
-        "Today, IBM Watson is used in a multitude of industry sectors with specialized information needs, including veterinary science, environmental and geotechnical engineering, education, government, food and beverage, legal, and music and entertainment."
-      ],
-      "source": "https://www.techrepublic.com/article/ibm-watson-the-smart-persons-guide/",
-      "innovation_year": 2010,
-      "views": 2367,
-      "id": 9
-    },
-    {
       "innovation_image": "https://media.istockphoto.com/id/1324380506/photo/people-with-vr-grasses-playing-virtual-reality-game-future-digital-technology-and-3d-virtual.jpg?s=612x612&w=0&k=20&c=I_9fnEi1hNHFwy0qe8g7V1ZQJmgyKEDOSDJonScTSMU=",
       "innovation_title": "Virtual Reality Headset",
       "innovator_name": "Palmer Luckey",

@@ -8,7 +8,14 @@ function InnovationItem({
   source,
   views,
   innovation_image,
-}) {
+  onDeleteInnovationItem,
+  id
+}) 
+
+{
+  // const onDeleteInnovationItem = () => onDeleteInnovationItem(id);
+  const deleteInnovationItem = () => onDeleteInnovationItem(id);
+
   return (
     <div>
       <h1>{innovation_title}</h1>
@@ -18,6 +25,7 @@ function InnovationItem({
       <h1>{views}</h1>
       <img src={innovation_image} alt='story picture' />
       <p>{source}</p>
+      <button onClick={deleteInnovationItem}>❌</button>
     </div>
   )
 }

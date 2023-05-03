@@ -30,11 +30,22 @@ function App() {
     });
   
   };
+
+  const onDeleteInnovationItem = (id) => {
+    fetch(`http://localhost:4300/innovations/${id}`, {
+      method: 'DELETE',
+    })
+      .then(() => {
+        setInnovations(innovations.filter((item) => item.id !== id));
+      });
+  };
+
+
   return (
     <div className='App'>
-      <Header />
+      <Header />      
+      <InnovationsList innovations={innovations} onDeleteInnovationItem={onDeleteInnovationItem} />      
       <AddInnovation addInnovation={addInnovation}/>
-      <InnovationsList innovations={innovations} />
     </div>
   )
 }
