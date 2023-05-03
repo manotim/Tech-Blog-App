@@ -8,21 +8,21 @@ function App() {
   const [innovations, setInnovations] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:4300/innovations')
+    fetch('http://localhost:4200/innovations')
       .then((res) => res.json())
       .then((data) => setInnovations(data))
   }, [])
 
-  const addInnovation =(innovations)=>{
-    fetch('http://localhost:4300/innovations', {
-      method : 'POST',
-      headers:{
+  const addInnovation = (innovations) => {
+    fetch('http://localhost:4200/innovations', {
+      method: 'POST',
+      headers: {
         'Content-Type': 'application/json',
-        
       },
 
       body: JSON.stringify(innovations),
     })
+
     .then((response)=> response.json())
     .then((innovations) => {
       setInnovations([...innovations,innovations]);
@@ -46,6 +46,7 @@ function App() {
       <Header />      
       <InnovationsList innovations={innovations} onDeleteInnovationItem={onDeleteInnovationItem} />      
       <AddInnovation addInnovation={addInnovation}/>
+
     </div>
   )
 }

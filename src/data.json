@@ -18,7 +18,6 @@
       ],
       "source": "https://www.britannica.com/topic/World-Wide-Web",
       "innovation_year": 1989,
-      "views": 3532,
       "id": 1
     },
     {
@@ -42,7 +41,6 @@
       ],
       "Source": " https://cybernews.com/editorial/how-iphone-changed-world-in-15-years/#:~:text=Although%20the%20touchscreen,its%20walled%20garden.",
       "innovation_year": 2007,
-      "views": 4972,
       "id": 2
     },
     {
@@ -60,7 +58,6 @@
       ],
       "source": "https://www.britannica.com/technology/Microsoft-Windows",
       "innovation_year": 1985,
-      "views": 5678,
       "id": 3
     },
     {
@@ -81,7 +78,6 @@
       ],
       "Source": "https://www.britannica.com/topic/Google-Inc/Other-services ",
       "innovation_year": 1997,
-      "views": 1395,
       "id": 4
     },
     {
@@ -97,7 +93,6 @@
       ],
       "source": "https://www.techtarget.com/searchaws/definition/Amazon-Web-Services",
       "innovation_year": 2006,
-      "views": 4873,
       "id": 5
     },
     {
@@ -125,7 +120,6 @@
       ],
       "Source": " https://www.britannica.com/technology/system-software",
       "innovation_year": 1991,
-      "views": 1956,
       "id": 6
     },
     {
@@ -142,7 +136,6 @@
       ],
       "source": "https://www.javatpoint.com/james-gosling-father-of-java",
       "innovation_year": 1995,
-      "views": 5229,
       "id": 7
     },
     {
@@ -162,10 +155,11 @@
       ],
       "Source": "https://d3.harvard.edu/platform-digit/submission/tesla-a-data-driven-future/ ",
       "innovation_year": 2008,
-      "views": 9285,
       "id": 8
     },
+ 
     {
+
       "innovation_image": "https://media.istockphoto.com/id/1324380506/photo/people-with-vr-grasses-playing-virtual-reality-game-future-digital-technology-and-3d-virtual.jpg?s=612x612&w=0&k=20&c=I_9fnEi1hNHFwy0qe8g7V1ZQJmgyKEDOSDJonScTSMU=",
       "innovation_title": "Virtual Reality Headset",
       "innovator_name": "Palmer Luckey",
@@ -182,7 +176,6 @@
       ],
       "Source": "https://www.iberdrola.com/innovation/virtual-reality ",
       "innovation_year": 2012,
-      "views": 8899,
       "id": 10
     },
     {
