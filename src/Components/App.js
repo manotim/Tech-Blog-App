@@ -8,10 +8,23 @@ import Header from './Header'
 function App() {
   const [innovations, setInnovations] = useState([])
 
-  useEffect(() => {
+  function getInnovation(search) {
+    const newInnovation = innovations.filter(
+      (innovation) => innovation.innovation_title === search
+    )
+    console.log(search)
+    console.log(newInnovation)
+    setInnovations(newInnovation)
+  }
+
+  function fetchInnovations(setInnovations) {
     fetch('http://localhost:4200/innovations')
       .then((res) => res.json())
       .then((data) => setInnovations(data))
+  }
+
+  useEffect(() => {
+    fetchInnovations(setInnovations)
   }, [])
 
 
@@ -26,31 +39,45 @@ function App() {
       body: JSON.stringify(innovations),
     })
 
-    .then((response)=> response.json())
-    .then((innovations) => {
-      setInnovations([...innovations,innovations]);
+      .then((response) => response.json())
+      .then((innovations) => {
+        setInnovations([...innovations, innovations])
+      })
+  }
 
-    });
-  
-  };
+  if (innovations.length === 0) {
+    return (
+      <main>
+        <div className='title'>
+          <h1>No Current Innovations</h1>
+          <button
+            className='refresh-btn'
+            onClick={() => fetchInnovations(setInnovations)}
+          >
+            Refresh
+          </button>
+        </div>
+      </main>
+    )
+  }
 
-  const onDeleteInnovationItem = (id) => {
-    fetch(`http://localhost:4200/innovations/${id}`, {
-      method: 'DELETE',
-    })
-      .then(() => {
-        setInnovations(innovations.filter((item) => item.id !== id));
-      });
-  };
-
+  function removeInnovation(id) {
+    const remainingInnovations = innovations.filter(
+      (innovation) => innovation.id !== id
+    )
+    setInnovations(remainingInnovations)
+  }
 
   return (
     <div className='App'>
-      <Header />      
-      <InnovationsList innovations={innovations} onDeleteInnovationItem={onDeleteInnovationItem} />     
+      <Header getInnovation={getInnovation} />
+      
+      <InnovationsList
+        innovations={innovations}
+        removeInnovation={removeInnovation}
+      />
+      <AddInnovation addInnovation={addInnovation} />
       <UpdateInnovation updateInnovation={UpdateInnovation}/>
-      <AddInnovation addInnovation={addInnovation}/>
-
     </div>
   )
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 import imageLogoLeft from '../images/logo_left.jpg'
 import imageLogoRight from '../images/logo_right.png'
+import SearchInnovation from './SearchInnovation'
 
-function Header() {
+function Header({ getInnovation }) {
   return (
     <div>
       <header>
@@ -14,6 +15,7 @@ function Header() {
           <img src={imageLogoRight} alt='' className='logo' />
         </nav>
       </header>
+      <SearchInnovation getInnovation={getInnovation} />
     </div>
   )
 }

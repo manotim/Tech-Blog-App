@@ -1,3 +1,87 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: rgb(82, 91, 167);
+  color: black;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+  font-size: 1.4rem;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  margin: 5rem 0;
+  max-width: 1170px;
+  background: rgb(146, 90, 132);
+  border-radius: 0.25rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.innovation {
+  background: white;
+  border-radius: 0.25rem;
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.innovation:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.innovation img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-top-right-radius: o.25rem;
+  border-top-left-radius: 0.25rem;
+}
+
+.innovation-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.innovation h4 {
+  margin-bottom: 0;
+}
+
+.innovation-title {
+  margin: 2rem;
+}
+
+.innovation-year {
+  color: hsl(205, 78%, 60%);
+  background: hsl(205, 100%, 96%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin: 2rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +89,30 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.danger-btn {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.refresh-btn {
+  background-color: rgb(30, 32, 116);
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.btn {
+  background-color: rgb(15, 231, 69);
+  color: rgb(12, 11, 11);
+  font-size: 15px;
+  margin: 3px;
+  padding: 3px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +134,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.container {
+  width: 90vw;
+  margin: 5rem 0;
+  padding: 1.5rem 2rem;
 }
 
 em {

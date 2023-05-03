@@ -1,14 +1,23 @@
 import React from 'react'
 import InnovationItem from './InnovationItem'
 
-function InnovationsList({ innovations, onDeleteInnovationItem }) {
+
+function InnovationsList({ innovations, removeInnovation }) {
   return (
-    <div>
-      {innovations.map((innovation) => {
-        return <InnovationItem {...innovation} key={innovation.id} onDeleteInnovationItem={onDeleteInnovationItem}/>
-      })}
-      
-    </div>
+    <main>
+      <section className='container'>
+        {innovations.map((innovation) => {
+          return (
+            <InnovationItem
+              {...innovation}
+              key={innovation.id}
+              removeInnovation={removeInnovation}
+            />
+          )
+        })}
+      </section>
+    </main>
+
   )
 }
 

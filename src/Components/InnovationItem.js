@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function InnovationItem({
   innovation_title,
@@ -6,27 +6,36 @@ function InnovationItem({
   innovation_name,
   innovation_year,
   source,
-  views,
   innovation_image,
-  onDeleteInnovationItem,
-  id
-}) 
-
-{
-  // const onDeleteInnovationItem = () => onDeleteInnovationItem(id);
-  const deleteInnovationItem = () => onDeleteInnovationItem(id);
-
+  removeInnovation,
+  id,
+}) {
+  const [readMore, setReadMore] = useState(false)
   return (
-    <div>
-      <h1>{innovation_title}</h1>
-      <h1>{innovation_name}</h1>
-      <h1>{innovation_year}</h1>
-      <p>{innovation_story}</p>
-      <h1>{views}</h1>
-      <img src={innovation_image} alt='story picture' />
-      <p>{source}</p>
-      <button onClick={deleteInnovationItem}>❌</button>
-    </div>
+    <article className='innovation'>
+      <img src={innovation_image} alt={innovation_name} />
+      <footer>
+        <div className='innovation-info'>
+          <h2 className='innovation-title'>{innovation_title}</h2>
+          <h4 className='innovation-year'>
+            Innovation Year: {innovation_year}
+          </h4>
+        </div>
+
+        <p>
+          {readMore ? innovation_story : `${innovation_story.slice(0, 2)}...`}
+          <button className='btn' onClick={() => setReadMore(!readMore)}>
+            {readMore ? 'show less' : 'read more'}
+          </button>
+        </p>
+        <h3>
+          Source: <a href={source}>{source}</a>
+        </h3>
+        <button className='danger-btn' onClick={() => removeInnovation(id)}>
+          Not Interested
+        </button>
+      </footer>
+    </article>
   )
 }
 
