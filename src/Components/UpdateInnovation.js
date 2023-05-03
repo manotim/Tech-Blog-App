@@ -6,7 +6,7 @@ function UpdateInnovation({updateInnovation}) {
     const [innovation_title, setInnovation_title] = useState('')
     const [innovaton_name, setInnovation_name] = useState('')
     const [innovator_story, setInnovator_story] = useState('')
-    const  [source, setSource] = useState('')
+    const [source, setSource] = useState('')
     const [innovation_year, setInnovation_year] = useState('')
 
     const handleSubmit = (event) =>{
