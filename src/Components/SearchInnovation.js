@@ -12,17 +12,21 @@ function SearchInnovation({ getInnovation }) {
     getInnovation(search)
   }
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className='search-container'>
+      <form className='search-form' onSubmit={handleSubmit}>
+        <label className='search-label' htmlFor='searchname'>
+          Search:{' '}
+        </label>
         <input
+          className='search-form-input'
           type='text'
           name='searchname'
           id='searchname'
           value={search}
           onChange={handleChange}
         />
-        <button type='submit'>
-          <span class='material-symbols-outlined'>search</span>
+        <button className='search-btn' type='submit'>
+          <span className='material-symbols-outlined'>search</span>
         </button>
       </form>
     </div>
