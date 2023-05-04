@@ -5,6 +5,28 @@ body {
   color: black;
   line-height: 1.5;
   font-size: 0.875rem;
+  display: grid;
+  grid-template-columns: auto 0px;
+}
+
+.top {
+  --offset: 50px;
+
+  position: sticky;
+  bottom: 20px;
+  margin-right: 10px;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #ebe3e3;
+  background: #e012d6af;
+  border-radius: 100px;
+  white-space: nowrap;
 }
 
 p {
@@ -13,11 +35,22 @@ p {
   font-size: 1.4rem;
 }
 
+h2 i {
+  font-size: 14px;
+  color: #67696b;
+}
+
 main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+legend {
+  font-size: 30px;
+  color: #285ba8;
+  background-color: rgb(150, 145, 145);
 }
 
 .container {
@@ -33,9 +66,41 @@ main {
 .innovation {
   background: white;
   border-radius: 0.25rem;
-  margin: 2rem 0;
+  margin: 5rem 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s linear;
+}
+
+.edit-story {
+  display: flex;
+  background-color: rgba(255, 255, 0, 0.753);
+  color: rgba(0, 0, 0, 0.733);
+  font-weight: 600;
+  font-size: 23px;
+  margin: 7px;
+  padding: 7px;
+}
+
+.add-form {
+  background-color: rgb(120, 170, 172);
+}
+
+.add-form input {
+  width: 40%;
+  margin: 20px;
+}
+
+.add-form label {
+  font-size: 30px;
+}
+
+.add-btn {
+  background-color: #392cac;
+  font-size: 26px;
+  width: 40%;
+  color: white;
+  margin: 7px;
+  padding: 7px;
 }
 
 .title {
@@ -49,7 +114,7 @@ main {
 
 .innovation img {
   width: 100%;
-  height: 50%;
+  height: 40;
   object-fit: cover;
   border-top-right-radius: o.25rem;
   border-top-left-radius: 0.25rem;
@@ -59,7 +124,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #392cac5b;
+  font-size: 27px;
 }
 
 .innovation h4 {
@@ -80,6 +147,33 @@ main {
 
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.search-container {
+  background-color: #61dafb;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-btn {
+  border: 1px solid white;
+  border-radius: 45%;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+
+.search-btn-input {
+  background-color: black;
+  width: 85%;
 }
 
 .App {
@@ -92,10 +186,13 @@ main {
 }
 
 .danger-btn {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.911);
+  border: 1px double black;
   color: white;
+  width: 45%;
   font-size: 20px;
   margin: 5px;
+  margin-bottom: 10px;
   padding: 5px;
 }
 
@@ -113,6 +210,10 @@ main {
   font-size: 15px;
   margin: 3px;
   padding: 3px;
+}
+
+.search-label {
+  font-size: 24px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
