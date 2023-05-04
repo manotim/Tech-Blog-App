@@ -1,11 +1,19 @@
 import './App.css'
 import React, { useState, useEffect } from 'react'
+import { Route, Switch, useHistory } from 'react-router-dom'
 import InnovationsList from './InnovationsList'
 import AddInnovation from './AddInnovation'
 import Header from './Header'
+import Home from './Home'
+
+import Login from './Login'
+import NavBar from './NavBar'
 
 function App() {
   const [innovations, setInnovations] = useState([])
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+  const history = useHistory()
 
   function getInnovation(search) {
     const newInnovation = innovations.filter(
@@ -19,12 +27,19 @@ function App() {
   function fetchInnovations(setInnovations) {
     fetch('http://localhost:4200/innovations')
       .then((res) => res.json())
-      .then((data) => setInnovations(data))
+      .then((data) => {
+        setInnovations(data)
+        setIsLoading(false)
+      })
   }
 
   useEffect(() => {
-    fetchInnovations(setInnovations)
-  }, [])
+    if (isLoggedIn) {
+      fetchInnovations(setInnovations)
+    } else {
+      setIsLoading(false)
+    }
+  }, [isLoggedIn])
 
   const addInnovation = (innovations) => {
     fetch('http://localhost:4200/innovations', {
@@ -32,29 +47,12 @@ function App() {
       headers: {
         'Content-Type': 'application/json',
       },
-
       body: JSON.stringify(innovations),
     })
       .then((response) => response.json())
       .then((innovations) => {
         setInnovations([...innovations, innovations])
       })
-  }
-
-  if (innovations.length === 0) {
-    return (
-      <main>
-        <div className='title'>
-          <h1>No Current Innovations</h1>
-          <button
-            className='refresh-btn'
-            onClick={() => fetchInnovations(setInnovations)}
-          >
-            Refresh
-          </button>
-        </div>
-      </main>
-    )
   }
 
   function removeInnovation(id) {
@@ -75,10 +73,29 @@ function App() {
     })
   }
 
+  if (isLoading) {
+    return <div>Loading...</div>
+  }
+
+  if (!isLoggedIn) {
+    history.push('/login')
+  }
+
   return (
     <div className='App'>
       <Header getInnovation={getInnovation} />
-
+      <NavBar setIsLoggedIn={setIsLoggedIn} />
+      <Switch>
+        <Route exact path='/login'>
+          <Login setIsLoggedIn={setIsLoggedIn} />
+        </Route>
+        <Route exact path='/add-form'>
+          <AddInnovation />
+        </Route>
+        <Route exact path='/'>
+          <Home isLoggedIn={isLoggedIn} />
+        </Route>
+      </Switch>
       <InnovationsList
         innovations={innovations}
         editInnovation={editInnovation}
