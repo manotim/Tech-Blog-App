@@ -54,30 +54,6 @@ function App() {
         setInnovations([...innovations, innovations])
       })
   }
-  const updateInnovation = (id, innovationData) => {
-    fetch(`http://localhost:4200/innovations/`, {
-      method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(innovationData),
-    })
-    .then(response => response.json())
-    .then(updatedInnovation => {
-      // Find the index of the updated innovation in the state array
-      const index = innovations.findIndex(i => i.id === updatedInnovation.id);
-      if (index >= 0) {
-        // Update the state array with the updated innovation
-        const newInnovations = [...innovations];
-        newInnovations[index] = updatedInnovation;
-        setInnovations(newInnovations);
-      }
-    })
-    .catch(error => {
-      console.error('Failed to update innovation:', error);
-    });
-  };
-  
 
   function removeInnovation(id) {
     const remainingInnovations = innovations.filter(
@@ -105,6 +81,21 @@ function App() {
     history.push('/login')
   }
 
+  if (innovations.length === 0 && isLoggedIn) {
+    return (
+      <main>
+        <h2>No New Innovations</h2>
+        <br />
+        <button
+          className='refresh-btn'
+          onClick={() => fetchInnovations(setInnovations)}
+        >
+          Refresh
+        </button>
+      </main>
+    )
+  }
+
   return (
     <div className='App'>
       <Header getInnovation={getInnovation} />
@@ -114,7 +105,7 @@ function App() {
           <Login setIsLoggedIn={setIsLoggedIn} />
         </Route>
         <Route exact path='/add-form'>
-          <AddInnovation />
+          <AddInnovation addInnovation={addInnovation} />
         </Route>
         <Route exact path='/'>
           <Home isLoggedIn={isLoggedIn} />
@@ -126,7 +117,6 @@ function App() {
         removeInnovation={removeInnovation}
       />
       <AddInnovation addInnovation={addInnovation} />
-
     </div>
   )
 }
