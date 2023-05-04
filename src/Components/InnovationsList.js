@@ -3,6 +3,7 @@ import InnovationItem from './InnovationItem'
 
 
 function InnovationsList({ innovations, removeInnovation }) {
+  
   return (
     <main>
       <section className='container'>
@@ -12,6 +13,7 @@ function InnovationsList({ innovations, removeInnovation }) {
               {...innovation}
               key={innovation.id}
               removeInnovation={removeInnovation}
+              likeInnovation={innovation}
             />
           )
         })}
