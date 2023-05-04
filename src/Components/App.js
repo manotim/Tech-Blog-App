@@ -1,7 +1,6 @@
 import './App.css'
 import React, { useState, useEffect } from 'react'
 import InnovationsList from './InnovationsList'
-import UpdateInnovation from './UpdateInnovation'
 import AddInnovation from './AddInnovation'
 import Header from './Header'
 
@@ -27,8 +26,6 @@ function App() {
     fetchInnovations(setInnovations)
   }, [])
 
-
-
   const addInnovation = (innovations) => {
     fetch('http://localhost:4200/innovations', {
       method: 'POST',
@@ -38,7 +35,6 @@ function App() {
 
       body: JSON.stringify(innovations),
     })
-
       .then((response) => response.json())
       .then((innovations) => {
         setInnovations([...innovations, innovations])
@@ -92,16 +88,28 @@ function App() {
     setInnovations(remainingInnovations)
   }
 
+  function editInnovation(innovation) {
+    fetch(`http://localhost:4200/innovations/${innovation.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+
+      body: JSON.stringify(innovation),
+    })
+  }
+
   return (
     <div className='App'>
       <Header getInnovation={getInnovation} />
-      
+
       <InnovationsList
         innovations={innovations}
+        editInnovation={editInnovation}
         removeInnovation={removeInnovation}
       />
       <AddInnovation addInnovation={addInnovation} />
-      <UpdateInnovation updateInnovation={updateInnovation}/>
+
     </div>
   )
 }
