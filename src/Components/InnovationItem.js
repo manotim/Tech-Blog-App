@@ -15,60 +15,55 @@ function InnovationItem({
 }) {
   const [readMore, setReadMore] = useState(false)
 
-
-  const [likeCount, setLikeCount] = useState(0);
-  const [dislikeCount, setDislikeCount] = useState(0); 
-  const [activeBtn, setActiveBtn] = useState("none");
+  const [likeCount, setLikeCount] = useState(0)
+  const [dislikeCount, setDislikeCount] = useState(0)
+  const [activeBtn, setActiveBtn] = useState('none')
 
   const handleLikeClick = () => {
-    if (activeBtn === "none") {
-      setLikeCount(likeCount + 1);
-      setActiveBtn("like");
-      return;
+    if (activeBtn === 'none') {
+      setLikeCount(likeCount + 1)
+      setActiveBtn('like')
+      return
     }
- 
-    if (activeBtn === 'like'){
-      setLikeCount(likeCount - 1);
-      setActiveBtn("none");
-      return;
+
+    if (activeBtn === 'like') {
+      setLikeCount(likeCount - 1)
+      setActiveBtn('none')
+      return
     }
- 
-    if (activeBtn === "dislike") {
-      setLikeCount(likeCount + 1);
-      setDislikeCount(dislikeCount - 1);
-      setActiveBtn("like");
+
+    if (activeBtn === 'dislike') {
+      setLikeCount(likeCount + 1)
+      setDislikeCount(dislikeCount - 1)
+      setActiveBtn('like')
     }
-  };
-  
+  }
+
   const handleDisikeClick = () => {
-    if (activeBtn === "none") {
-      setDislikeCount(dislikeCount + 1);
-      setActiveBtn("dislike");
-      return;
+    if (activeBtn === 'none') {
+      setDislikeCount(dislikeCount + 1)
+      setActiveBtn('dislike')
+      return
     }
-   
-    if (activeBtn === 'dislike'){
-      setDislikeCount(dislikeCount - 1);
-      setActiveBtn("none");
-      return;
+
+    if (activeBtn === 'dislike') {
+      setDislikeCount(dislikeCount - 1)
+      setActiveBtn('none')
+      return
     }
- 
-    if (activeBtn === "like") {
-      setDislikeCount(dislikeCount + 1);
-      setLikeCount(likeCount - 1);
-      setActiveBtn("dislike");
+
+    if (activeBtn === 'like') {
+      setDislikeCount(dislikeCount + 1)
+      setLikeCount(likeCount - 1)
+      setActiveBtn('dislike')
     }
-  };
-
-
-
+  }
 
   const [toggleChangeStory, setToggleChangeStory] = useState(false)
 
   function handleEditStory() {
     setToggleChangeStory(!toggleChangeStory)
   }
-
 
   return (
     <article className='innovation'>
@@ -106,28 +101,26 @@ function InnovationItem({
           />
         ) : null}
         <button className='danger-btn' onClick={() => removeInnovation(id)}>
-          Not Interested
+          Remove Story
         </button>
 
-         
-          <div className="btn-container">
-            <button
-              className={`btn ${activeBtn === "like" ? "like-active" : ""}`}
-              onClick={handleLikeClick}
-            >
-              <span className="fa-solid fa-thumbs-down"></span>
-              Like {likeCount}
-            </button>
-        
-            <button
-              className={`btn ${activeBtn === "dislike" ? "dislike-active" : ""}`}
-              onClick={handleDisikeClick}
-            >
-              <span className="material-symbols-rounded"></span>
-              Dislike {dislikeCount}
-            </button>
-          </div>
-        
+        <div className='btn-container'>
+          <button
+            className={`btn ${activeBtn === 'like' ? 'like-active' : ''}`}
+            onClick={handleLikeClick}
+          >
+            <span className='fa-solid fa-thumbs-down'></span>
+            Like {likeCount}
+          </button>
+
+          <button
+            className={`btn ${activeBtn === 'dislike' ? 'dislike-active' : ''}`}
+            onClick={handleDisikeClick}
+          >
+            <span className='material-symbols-rounded'></span>
+            Dislike {dislikeCount}
+          </button>
+        </div>
       </footer>
       <button className='edit-story' id='edit-story' onClick={handleEditStory}>
         Change Story
