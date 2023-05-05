@@ -307,7 +307,7 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  body {
+  html {
     width: 100%;
     background-color: red;
   }
