@@ -175,6 +175,29 @@
       "source": "https://www.iberdrola.com/innovation/virtual-reality ",
       "innovation_year": 2012,
       "id": 9
+    },
+    {
+      "innovation_image": "https://s.abcnews.com/images/Technology/facebook-file-rt-ml-211004_1633363717419_hpMain_16x9_992.jpg",
+      "innovation_title": "Facebook",
+      "innovator_name": "Mark Zuckerberg",
+      "innovation_story": [
+        "Facebook, American online social network service that is part of the company Meta Platforms.",
+        "Facebook was founded in 2004 by Mark Zuckerberg, Eduardo Saverin, Dustin Moskovitz, and Chris Hughes, all of whom",
+        "were students at Harvard University. Facebook became the largest social network in the world,",
+        "with nearly three billion users as of 2021, and about half that number were using Facebook every day.",
+        "The company’s headquarters are in Menlo Park, California.\n\nAccess to Facebook is free of charge,",
+        "and the company earns most of its money from advertisements on the website. New users can create profiles, upload photos,",
+        "join a preexisting group, and start new groups. The site has many components, including Timeline,",
+        "a space on each user’s profile page where users can post their content and friends can post messages;",
+        "Status, which enables users to alert friends to their current location or situation; and News Feed,",
+        "which informs users of changes to their friends’ profiles and status. Users can chat with each other",
+        "and send each other private messages. Users can signal their approval of content on Facebook with the Like button,",
+        "a feature that also appears on many other websites. Other services that are part of Meta Platforms are Instagram,",
+        "a photo- and video-sharing social network; Messenger, an instant-messaging application; and WhatsApp, a text-message and VoIP"
+      ],
+      "source": "https://www.britannica.com/topic/Facebook",
+      "innovation_year": "2004",
+      "id": 10
     }
   ]
 }
