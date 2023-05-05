@@ -25,7 +25,7 @@ function App() {
   }
 
   function fetchInnovations(setInnovations) {
-    fetch('http://localhost:4200/innovations')
+    fetch('https://coder-news.onrender.com/innovations')
       .then((res) => res.json())
       .then((data) => {
         setInnovations(data)
@@ -42,7 +42,7 @@ function App() {
   }, [isLoggedIn])
 
   const addInnovation = (innovations) => {
-    fetch('http://localhost:4200/innovations', {
+    fetch('https://coder-news.onrender.com/innovations', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ function App() {
   }
 
   function editInnovation(innovation) {
-    fetch(`http://localhost:4200/innovations/${innovation.id}`, {
+    fetch(`https://coder-news.onrender.com/innovations/${innovation.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
