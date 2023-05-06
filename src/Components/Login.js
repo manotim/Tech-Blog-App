@@ -28,7 +28,7 @@ function Login({ setIsLoggedIn }) {
   return (
     <div>
       <div>
-        <h1>Login</h1>
+        <h1>Login Form</h1>
         <form className='login-form' onSubmit={handleSubmit}>
           <div>
             <label htmlFor='name'>Username: </label>
@@ -52,7 +52,7 @@ function Login({ setIsLoggedIn }) {
               onChange={handleChange}
             />
           </div>
-          <input className='login-btn' type='submit' value='Submit' />
+          <input className='login-btn' type='submit' value='Login' />
         </form>
       </div>
     </div>

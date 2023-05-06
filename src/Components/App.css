@@ -316,7 +316,7 @@ header {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   body {
     width: auto;
   }
@@ -327,5 +327,9 @@ header {
 
   h4 {
     display: none;
+  }
+
+  .innovation-title {
+    font-size: 2.0625rem;
   }
 }
