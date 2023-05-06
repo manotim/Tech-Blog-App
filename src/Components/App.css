@@ -105,6 +105,8 @@ legend {
 .edit-story {
   display: flex;
   background-color: rgba(255, 255, 0, 0.753);
+  border: 1px solid black;
+  border-radius: 10px;
   color: rgba(0, 0, 0, 0.733);
   font-weight: 600;
   font-size: 1.438rem;
@@ -127,6 +129,8 @@ legend {
 
 .add-btn {
   background-color: #392cac;
+  border: 1px solid black;
+  border-radius: 10px;
   font-size: 1.625rem;
   width: 40%;
   color: white;
@@ -220,6 +224,7 @@ legend {
 .danger-btn {
   background-color: rgba(255, 0, 0, 0.911);
   border: 1px double black;
+  border-radius: 10px;
   color: white;
   width: 35%;
   font-size: 1.25rem;
@@ -318,5 +323,9 @@ header {
 
   header {
     width: 100%;
+  }
+
+  h4 {
+    display: none;
   }
 }
