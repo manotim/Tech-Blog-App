@@ -65,7 +65,7 @@ legend {
 
 .container {
   width: 100vw;
-  margin: 5rem 0;
+  margin: 3rem 0;
   max-width: 73.125rem;
   background: rgb(146, 90, 132);
   border-radius: 0.25rem;
@@ -76,7 +76,7 @@ legend {
 .innovation {
   background: white;
   border-radius: 0.25rem;
-  margin: 5rem 0;
+  margin: 3rem 0;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s linear;
 }
